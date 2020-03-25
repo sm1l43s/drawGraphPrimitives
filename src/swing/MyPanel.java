@@ -19,7 +19,6 @@ public class MyPanel extends JPanel {
         parser = new Parser();
     }
 
-
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -31,17 +30,17 @@ public class MyPanel extends JPanel {
 
     private void paintPrimitives(Graphics2D g2, Shape shape, DrawObject draw) {
         if (shape instanceof Line) {
-                draw.paintLine(g2, (Line) shape);
-            } else if (shape instanceof Arc) {
-                draw.paintArc(g2, (Arc) shape);
-            } else if (shape instanceof Oval) {
-                draw.paintOval(g2, (Oval) shape);
-            } else if (shape instanceof Rect) {
-                draw.paintRect(g2, (Rect) shape);
-            } else if (shape instanceof Polygon) {
-                draw.paintPolygon(g2, (Polygon) shape);
-            } else if (shape instanceof Polyline) {
-                draw.paintPolyline(g2, (Polyline) shape);
-            }
+            draw.paintLine(g2, (Line) shape);
+        } else if (shape instanceof Arc) {
+            draw.paintArc(g2, (Arc) shape);
+        } else if (shape instanceof Oval) {
+            draw.paintOval(g2, (Oval) shape);
+        } else if (shape instanceof Rect) {
+            draw.paintRect(g2, (Rect) shape);
+        } else if (shape instanceof Polygon) {
+            draw.paintPolygon(g2, (Polygon) shape);
+        } else if (shape instanceof Polyline) {
+            draw.paintPolyline(g2, (Polyline) shape);
+        }
     }
 }

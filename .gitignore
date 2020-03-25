@@ -12,5 +12,5 @@
 
 # virtual machine crash logs #
 *.iml
-.idea/*
+/.idea/
 
