@@ -24,7 +24,6 @@ public class MyPanel extends JPanel {
         super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
         g2.setStroke(new BasicStroke(5));
-
         parser.getAllPrimitivesList().forEach((n) -> paintPrimitives(g2, (Shape) n, new DrawObject()));
     }
 
