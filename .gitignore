@@ -1,2 +1,16 @@
+*.class
 # Project exclude paths
 /out/
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Packcage Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs #
+*.iml
+.idea/*
+
